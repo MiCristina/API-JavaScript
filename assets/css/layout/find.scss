@@ -1,0 +1,187 @@
+.find{
+    padding-top: 32px;
+    padding-bottom: 22px;
+    @include medium{
+        padding-top: 37px;
+        padding-left: 0;
+        padding-right: 0;
+        #contentResults{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 25px;
+            .fav-true{
+                grid-column: 1/ span 2;
+                grid-row: 1 / span 2;
+                height: 510px;
+                img{
+                    height: 353px;
+                }
+                h3{
+                    font-size: 35px;
+                    width: 51%;
+                }
+                .flexDesk{
+                    display: flex;
+                    margin: -16px 0 -16px;
+                    .flex{
+                        display: block;
+                        .price{
+                            font-size: 24px;
+                            right: 30px;
+                            position: absolute;
+                            bottom: 75px;
+                        }
+                        .icons{
+                            right: 30px;
+                            bottom: 42px;
+                            i{
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+            .fav-false{
+                height: 245px;
+                article{
+                    padding: 16px 20px;
+                    img{
+                        height: 160px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    img{
+        height: 72px;
+    }
+    h2{
+        @include text($font-bold, 40px, $dark);
+        margin: 16px 0;
+        @include medium{
+            font-size: 55px;
+        }
+    }
+    article{
+        position: relative;
+        background-color: white;
+        box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.0925754);
+        border-radius: 5px;
+        padding: 25px 20px 14px;
+        margin: 0 0 20px;
+        height: 100%;
+        @include medium{
+            padding: 31px 30px 28px;
+            margin: 0;
+        }
+        img{
+            height: 221px;
+            display: block;
+            margin: 0 auto 6px;
+        }
+        h3, .price{
+            @include text($font-bold, 16px, $mediumGreen);
+        }
+        span.false{
+            display: none;
+        }
+        span.true{
+            position: absolute;
+            left: 0;
+            width: 55%;
+            background-color: $lightGreen;
+            @include text($font-bold, 12px, white);
+            display: block;
+            padding: 5px 14px 13px 16px;
+            border-radius: 0 30px 30px 0px;
+            @include medium{
+                font-size: 18px;
+                width: 44.5%;
+            }
+        }
+
+        .flex{
+            margin-top: 5px;
+        }
+
+        .flex, .icons{
+            display: flex;
+        }
+
+        .icons{
+            position: absolute;
+            right: 20px;
+            i{
+                font-size: 17px;
+                margin-left: 10px;
+                &:before{
+                    font-family: "rv-icons";
+                    font-style: normal;
+                }
+            }
+            
+            i.toxicity.false{
+                &:before{
+                    content: '\e804';
+                }
+            }
+            i.toxicity.true{
+                &:before{
+                    content: '\e805';
+                }
+            }
+            i.sun.high{
+                &:before{
+                    content: '\e811';
+                }
+            }
+            i.sun.no{
+                &:before{
+                    content: '\e803';
+                }
+            }
+            i.sun.low{
+                &:before{
+                    content: '\e812';
+                }
+            }
+            i.water.rarely{
+                &:before{
+                    content: '\e806';
+                }
+            }
+            i.water.regularly{
+                &:before{
+                    content: '\e807';
+                }
+            }
+            i.water.daily{
+                &:before{
+                    content: '\e808';
+                }
+            }
+        }
+    }
+    a{
+        @include text($font-light, 16px, $mediumGreen);
+        border: 1px solid $mediumGreen;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 16px 0;
+        width: 100%;
+        display: block;
+        @include medium{
+            margin-top: 60px;
+        }
+        i{
+            padding-right: 16px;
+            font-size: 18px;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.banner{
+    position: relative;
+    background-color: $lightGreen;
+    padding-top: 36px;
+    height: 593px;
+    @include medium{
+        height: 270px;
+    }
+    @include medium-large{
+        height: 400px;
+        padding: 57px;
+    }
+    @include extra-large{
+        height: 500px;
+        padding: 57px;
+    } 
+
+    .topImage {
+        img{
+            position: absolute;
+            @include position(0, unset, 0, unset);
+            z-index: 1;
+            width: 100%;
+            height: 412px;
+            @include medium{
+                height: 270px;
+                width: auto;
+            }
+            @include medium-large{
+                height: 400px;
+                width: auto;
+            }
+            @include extra-large{
+                height: 500px;
+                width: auto;
+            }            
+        }
+        img.right{
+            @include position(0, unset, unset, 0);
+        }
+        .desk{
+            @include center-vert;
+            left: 55.5%;
+            height: 270px;  
+            @include medium-large{
+                height: 400px;
+            }  
+            @include extra-large{
+                height: 428px;
+            }    
+        }
+    }
+    .content{
+        z-index: 2;
+        position: relative;
+        img{
+            height: 20px;
+            @include medium-large{
+                height: 25px;
+            }
+        }
+    }
+    h1{
+        @include text($font-bold, 40px, white);
+        margin-top: 31px;
+        @include medium{
+            width: 50%; 
+            margin: 16px 0 20px;
+        }
+        @include medium-large{
+            font-size: 70px;
+            margin: unset;
+        }
+    }
+    i{
+        @include text('', 35px, white);
+        margin-top: 16px;
+        display: block;
+    }
+    .bottomImage{
+        @include center-horiz;
+        bottom: 25px;
+        width: 86.25%;
+        z-index: 0;
+    }
+}

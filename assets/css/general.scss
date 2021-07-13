@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//Variaveis gerais que estão presentes na pagina
+@import "/assets/css/variable";
+
+//Mixins criados para facilitar a repetição de codigos
+@import "/assets/css/mixin";
+
+//Fonts puxadas do local para otimização 
+@import "/assets/css/font";
+
+//Icones importados pelo fontello para priorizar organização e padrão
+@import "/assets/css/icon"; 
+
+//Medias para responsividade
+@import "/assets/css/media";
+
+//Codigos generalizados para facilitar a estilização
+@import "/assets/css/default"; 
+
+//Facilitadores para container e classe usada com frequencia
+@import "/assets/css/grid"; 
+
+//Layout de cada dobra
+@import "/assets/css/layout/banner"; 
+@import "/assets/css/layout/field"; 
+@import "/assets/css/layout/notFind"; 
+@import "/assets/css/layout/find"; 

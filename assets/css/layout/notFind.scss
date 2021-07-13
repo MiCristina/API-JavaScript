@@ -1,0 +1,23 @@
+.notFind{
+    padding-top: 47px;
+    padding-bottom: 31px;
+    @include medium{
+        display: flex;
+        align-items: center;
+    }
+    h2{
+        @include text($font-bold, 45px, $lightGray);
+    }
+    p{
+        @include text($font-light, 16px, $lightGray);
+        margin: 16px 0 37px;
+        @include medium{
+            width: 40%;
+            margin: 16px 0 0;
+        }
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}

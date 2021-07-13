@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="/assets/css/general.scss" /> 
+  </head>
+
+  <body>
+    <section class="banner">
+      <div class="container">
+        <article class="topImage">
+          <img class="display-md-none" src="assets/image/hero/mobile/mobile-leaves.png" alt="Illustration | Greenthumb" />  
+          <img class="display-none display-md-block left" src="/assets/image/hero/desktop/left-leaves.png" alt="Illustration | Greenthumb">
+          <img class="desk display-none display-md-block" src="assets/image/hero/desktop/plantperson.png" alt="Illustration | Greenthumb" />  
+          <img class="display-none display-md-block right" src="/assets/image/hero/desktop/right-leaves.png" alt="Illustration | Greenthumb">
+        </article>
+        <div class="content">
+          <img src="assets/image/logo/logo.svg" alt="Logo | Greenthumb" />
+          <h1>Find your next green friend</h1>
+          <i class="icon-down-arrow"></i>
+        </div>
+        <img class="bottomImage display-md-none" src="assets/image/hero/mobile/mobile-plantperson.png" alt="Illustration | Greenthumb" />  
+    </div>
+    </section>
+
+    <section class="field">
+      <ul class="container">
+        <li>
+          <img src="/assets/image/illustrations/sun.png" alt="Illustration sun | Greenthumb" width="75" height="75">
+          <p>1. Set the amount of <strong> sunlight </strong> your plant will get.</p>
+          <div class="select">
+            <select id="sun">
+              <option hidden selected>Select...</option>
+              <option id="no" value="no">No sunlight</option>
+              <option id="low" value="low">Low sunlight</option>
+              <option id="high" value="high">High sunlight</option>
+            </select>
+            <i class="icon-open-arrow"></i>
+          </div>
+        </li>
+        <li class="espacamento">
+          <img src="/assets/image/illustrations/wateringcan.png" alt="Illustration wateringcan | Greenthumb" width="103" height="75">
+          <p>2. How often do you want to <strong> water </strong> your plant?</p>
+          <div class="select">
+            <select id="water">
+              <option hidden selected>Select...</option>
+              <option id="rarely" value="rarely">Rarely</option>
+              <option id="regularly" value="regularly">Regularly</option>
+              <option id="daily" value="daily">Daily</option>
+            </select>
+            <i class="icon-open-arrow"></i>
+          </div>
+        </li>
+        <li>
+          <img src="/assets/image/illustrations/dog.png" alt="Illustration dog | Greenthumb" width="75" height="62">
+          <div class="select">
+            <p>3. Do you have pets? Do they <strong> chew </strong> plants? </p>
+            <select id="pet">
+              <option hidden selected value="null">Select...</option>
+              <option id="false" value="false">No/They don’t care</option>
+              <option id="true" value="true">Yes</option>
+            </select>
+            <i class="icon-open-arrow"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="background-gray">
+      <div id="noResults" class="container">
+        <section class="notFind">
+          <div class="center-align">
+            <h2>No results yet…</h2>
+            <p>Use the filters above to find the plant that best fits your environment :)  </p>
+          </div>
+          <div>
+            <img src="/assets/image/illustrations/no-results.png" alt="Not find">
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+    <section class="background-gray" id="results">
+      <section class="container find">
+        <img src="/assets/image/illustrations/pick.png" alt="Illustration branch | Greenthumb">
+        <h2>Our picks for you</h2>
+          <div id="contentResults">
+        </div>
+        <a id="scrollToTop" title="button back to the top">
+          <span><i class="icon-up-arrow"></i>back to the top</span>
+        </a>
+      </section>
+    </section>
+
+
+  </body>
+  <script src="/assets/js/script.js"></script>  
+</html>

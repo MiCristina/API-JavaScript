@@ -1,0 +1,35 @@
+@mixin text($font, $size, $color) {
+    font-family: $font;
+    font-style: normal;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin center-horiz {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+}
+
+@mixin center-vert {
+    position: absolute;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(0%, -50%);
+}
+
+@mixin center-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin position($top, $bottom, $left, $right) {
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}

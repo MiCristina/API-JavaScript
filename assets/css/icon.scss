@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'rv-icons';
+    src: url('/assets/icon/icon.eot');
+    src: url('/assets/icon/icon.eot') format('embedded-opentype'),
+         url('/assets/icon/icon.woff2') format('woff2'),
+         url('/assets/icon/icon.woff') format('woff'), 
+         url('/assets/icon/icon.ttf') format('truetype'),
+         url('/assets/icon/icon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "rv-icons";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-filled-up-arrow:before { content: '\e800'; } /* '' */
+.icon-block:before { content: '\e803'; } /* '' */
+.icon-pet:before { content: '\e804'; } /* '' */
+.icon-skull:before { content: '\e805'; } /* '' */
+.icon-drop1:before { content: '\e806'; } /* '' */
+.icon-drop2:before { content: '\e807'; } /* '' */
+.icon-drop3:before { content: '\e808'; } /* '' */
+.icon-down-filled-arrow:before { content: '\e809'; } /* '' */
+.icon-open-arrow:before { content: '\e80a'; } /* '' */
+.icon-down-arrow:before { content: '\e80b'; } /* '' */
+.icon-up-arrow:before { content: '\e80c'; } /* '' */
+.icon-big-sun:before { content: '\e811'; } /* '' */
+.icon-little-sun:before { content: '\e812'; } /* '' */
